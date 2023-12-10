@@ -1,0 +1,18 @@
+/* styles/7-style.css */
+
+/* Custom font-family and font weight properties */
+:root {
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  /* Set the first choice font for font-family-base to Open Sans */
+  body {
+    font-family: var(--font-family-base);
+  }
+  
+  /* Set the first choice font for font-family-title to Raleway */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+  }
+  
