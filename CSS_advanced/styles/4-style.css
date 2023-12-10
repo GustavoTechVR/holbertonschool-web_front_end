@@ -1,6 +1,6 @@
 /* styles/4-style.css */
 
-/* Custom font-family properties */
+/* Define custom font-family properties for the root element */
 :root {
     --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -11,7 +11,7 @@
     font-family: var(--font-family-base);
   }
   
-  /* Target all 6 levels of heading tags and set font-family to font-family-title */
+  /* Target all heading tags (h1 to h6) and set font-family to font-family-title */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
   }
