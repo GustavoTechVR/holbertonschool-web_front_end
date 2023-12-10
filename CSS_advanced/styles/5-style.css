@@ -1,0 +1,26 @@
+/* styles/5-style.css */
+
+/* Custom font size properties */
+:root {
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+  }
+  
+  /* Set the base font size for the html element to 62.5% of normal size */
+  html {
+    font-size: 62.5%;
+  }
+  
+  /* Set font sizes in the body to font-size-medium */
+  body {
+    font-size: var(--font-size-medium);
+  }
+  
+  /* You can use the custom font size properties in your styles as needed */
+  /* Example: */
+  h1 {
+    font-size: var(--font-size-x-large);
+  }  
