@@ -89,17 +89,14 @@
     /* Styles for regular links containing a hyperlink */
   }
   
-  /* Targeting visited state for the link */
   a[href]:visited {
     font-style: italic;
   }
   
-  /* Targeting hover state for the link */
   a[href]:hover {
     text-decoration: underline;
   }
   
-  /* Targeting active state for the link */
   a[href]:active {
     background-color: var(--color-light-grey);
   }
