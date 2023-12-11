@@ -49,6 +49,22 @@
   a {
     color: var(--text-color);
     text-decoration: none;
+    
+    a[href]:link {
+   
+    }
+    
+    a[href]:visited {
+        font-style: italic;
+    }
+    
+    a[href]:hover {
+        text-decoration: underline;
+    }
+    
+    a[href]:active {
+        background-color: var(--color-light-grey);
+    }
   }
 
   /* Target all heading tags (h1 to h6) and set font-family to font-family-title */
@@ -84,19 +100,3 @@
     color: var(--section-title-color);
   }
 
-  /* Targeting anchor elements with hyperlinks */
-  a[href]:link {
-    /* Styles for regular links containing a hyperlink */
-  }
-  
-  a[href]:visited {
-    font-style: italic;
-  }
-  
-  a[href]:hover {
-    text-decoration: underline;
-  }
-  
-  a[href]:active {
-    background-color: var(--color-light-grey);
-  }
