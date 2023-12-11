@@ -1,0 +1,344 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */
+
+/* styles/18-style.css */
+
+/* Universal box sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+  /* Target the navbar-menu class and float it to the right */
+  .navbar-menu {
+    float: right;
+  }
+  
+  /* Target the nav class */
+  .nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Target the nav-item class in nav class */
+  .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+  }
+  
+  /* Target the nav-link class in nav class */
+  .nav-link {
+    display: block;
+    padding: var(--font-size-medium) 0;
+  }
+  
+  /* Hover effect for nav-link in nav class */
+  .nav-link:hover {
+    color: var(--nav-item-link-hover);
+  }
+
+/* Define custom properties for colors */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+    --nav-item-font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --nav-item-font-weight: 700;
+    --nav-item-font-size: 1.6rem;
+    --nav-item-letter-spacing: 4%;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0; /* 3 times the root element on the bottom, 0 elsewhere */
+    --nav-item-link-hover: var(--color-primary);
+    --section-tagline-margin: 0;
+    --button-display: inline-block;
+    --button-padding: 1.5rem 3rem;
+    --button-border: 0.2rem solid var(--color-primary);
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size-large);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
+  }
+  
+  /* Reset color for section-tagline to color-primary */
+  .section-tagline {
+    color: var(--color-primary);
+    margin: var(--section-tagline-margin);
+  }
+
+  /* Target all ul with the class row */
+  ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove default list styles */
+  }
+  
+  /* Target the col-1-3 class */
+  .col-1-3 {
+    width: 33.33%;
+    float: left;
+    padding: calc(0.5 * var(--font-size-medium));
+  }
+  
+  /* Target the col-1-2 class */
+  .col-1-2 {
+    width: 50%;
+    float: left;
+    padding: calc(0.5 * var(--font-size-medium));
+  }
+  
+  /* Target the footer-copyright class */
+  .footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+  }
+  
+  /* Align text to the right for all ul tags in the footer class */
+  .footer ul {
+    text-align: right;
+  }
+  
+  /* Reset color for card-category to color-primary */
+  .card-category {
+    color: var(--color-primary);
+  }
+  
+  /* Reset color for body to text-color */
+  body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+  }
+  
+  /* Reset color for anchor elements to text-color */
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    a:link {
+      /* Styles for regular links containing a hyperlink */
+    }
+    a:visited {
+      font-style: italic;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a:active {
+      background-color: var(--color-light-grey);
+    }
+  }
+
+  /* Target all heading tags (h1 to h6) and set font-family to font-family-title */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+  }
+
+  h1 {
+    font-size: var(--font-size-x-large);
+  }
+
+  .section-header {
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+  }
+
+  /* Styles for .section class */
+  .section {
+    padding: var(--section-padding);
+    padding: var(--section-header-padding);
+  }
+
+  .section-tagline {
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
+  }
+
+  /* Styles for container class */
+  .container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+
+  .section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+  }
+
+  /* Styles for .section-body class */
+  .section-body {
+    padding: var(--section-body-padding);
+  }
+
+  /* Styles for .section-footer class */
+  .section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+  }
+
+  /* Styles for .footer class */
+  .footer {
+    padding: var(--footer-padding);
+  } 
+
+  /* Create a new row after each instance of the class "row" */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Select all classes that start with "col-" */
+  [class^="col-"] {
+    float: left;
+    padding: calc(0.5 * var(--font-size-medium));
+  }
+  
+  /* Remove references to common properties for the individual col-1-3 and col-1-2 classes */
+  .col-1-3 {
+    width: 33.33%;
+  }
+  
+  .col-1-2 {
+    width: 50%;
+  }
+
+  /* Style the data-section-theme="dark" */
+  [data-section-theme="dark"] {
+    --text-color: #ffffff; /* Redefine custom property text-color to color-white */
+    --section-title-color: #ffffff; /* Redefine custom property section-title-color to color-white */
+    background: #090909; /* Set background to the variable color-black */
+  }
+
+  /* Style the footer-address class */
+  .footer-address {
+    color: var(--text-color); /* Set the color of the text to the text-color property */
+  }
+  
+  /* Style the social-link class */
+  .social-link {
+    display: block; /* Render as a block element */
+  }
+  
+  /* Style the svg children inside the social-link class */
+  .social-link svg {
+    fill: var(--text-color); /* Fill in the color of the svg children with the text-color variable */
+  }
+
+  
+  /* Target card-title that is inside card-services */
+  .card-services .card-title {
+    margin: 0; /* Set margin on all sides to none */
+  }
+  
+  /* Target a that is inside card-services */
+  .card-services a {
+    display: block; /* Render as block-level elements */
+    padding: calc(2 * var(--font-size-medium)); /* Set padding to 2x the root element */
+    background-color: var(--color-light-grey); /* Set background color to the variable color-light-grey */
+    text-decoration: none; /* Remove text decoration */
+  }
+  
+  /* Target the hover state of a that is inside card-services */
+  .card-services a:hover {
+    color: var(--color-white); /* Set foreground color to the variable color-white */
+    background-color: var(--color-primary); /* Set background color to the variable color-primary */
+  }
+
+  /* Create the button class selector */
+  button {
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    color: var(--button-color);
+    text-decoration: var(--button-text-decoration);
+  }
+  
+  /* Create the hover state of the button class selector */
+  button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    background: var(--button-hover-background);
+  }
+  
+  /* In [data-section-theme="dark"], add the variable */
+  [data-section-theme="dark"] {
+    --button-color: var(--color-white);
+  }
+
+  /* Center align the text */
+  .card-testimonial {
+    text-align: center;
+  }
+  
+  /* Target the card-avatar that is inside the card-testimonial */
+  
+  /* Round the radius on all sides at 50% */
+  .card-testimonial .card-avatar {
+    border-radius: 50%;
+    
+    /* Set the width to 10x the root element */
+    width: calc(10 * var(--font-size-medium));
+    
+    /* Set the height to 10x the root element */
+    height: calc(10 * var(--font-size-medium));
+  }
+  
+  /* Target the <cite> HTML tag which is inside card-quote inside the card-testimonial */
+  
+  /* Style as a block-level element */
+  .card-testimonial .card-quote cite {
+    display: block;
+    
+    /* Pad the top with 1x the root element */
+    padding-top: var(--font-size-medium);
+    
+    /* Set the foreground color value to the value of the color-primary variable */
+    color: var(--color-primary);
+  }
