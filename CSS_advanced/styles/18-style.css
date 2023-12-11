@@ -10,8 +10,8 @@
   box-sizing: border-box;
 }
 
-/* Target the navbar-menu class and float it to the right */
-.navbar-menu {
+  /* Target the navbar-menu class and float it to the right */
+  .navbar-menu {
     float: right;
   }
   
