@@ -23,7 +23,7 @@
   }
   
   /* Target the nav-item class in nav class */
-  .nav-item {
+  .nav-item:hover .nav-link::before {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -31,12 +31,21 @@
     display: var(--nav-item-display);
     margin: var(--nav-item-margin);
     color: var(--color-white);
+    background-color: var(--color-primary);
+    width: 100%;
   }
   
   /* Target the nav-link class in nav class */
-  .nav-link {
+  .nav-link::before {
     display: block;
     padding: var(--font-size-medium) 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 20%;
   }
   
   /* Hover effect for nav-link in nav class */
@@ -402,30 +411,3 @@
   }
 
   
-  /* Target the before pseudo-elements of nav-link that is inside the nav */
-
-  /* Set the values of these elements to empty using content */
-  /* Absolutely position the targeted elements */
-  /* Set the vertical position to 0 */
-  /* The horizontal position of the targeted elements should be 0 */
-  /* Set the color of the background color of the targeted elements to the value color-white */
-  /* The width of the targeted elements should be set to 0 */
-  /* Set the height to 20% of the root element value */
-  .nav-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--color-white);
-    width: 0;
-    height: 20%;
-  }
-  
-  /* Target the before pseudo-elements of nav-link when nav-item is hover and is inside nav */
-  
-  /* Set the background color of the elements to the variable color-primary */
-  /* Set the width of the elements to 100% */
-  .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary);
-    width: 100%;
-  }
