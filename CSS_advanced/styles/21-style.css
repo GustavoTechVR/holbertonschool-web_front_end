@@ -218,13 +218,13 @@
   } 
 
   /* Create a new row after each instance of the class "row" */
-.row::after {
+  .row::after {
     content: "";
     display: table;
     clear: both;
   }
 
-/* Select all classes that start with "col-" */
+  /* Select all classes that start with "col-" */
   [class^="col-"] {
     float: left;
     padding: calc(0.5 * var(--font-size-medium));
